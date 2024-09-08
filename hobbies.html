@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hobbies</title>
+  <style>
+  * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  }
+
+  body {
+    background: #1c1c1c;
+    color: whitesmoke;
+  }
+
+  header {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%; 
+    padding: 20px 10%;
+    background: transparent;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+  }
+
+  .logo {
+    font-size: 25px;
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 600;
+  }
+
+  .navbar a {
+    font-size: 18px;
+    color: whitesmoke;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 35px;
+    transition: .3s;
+  }
+
+  .navbar a:hover,
+  .navbar a.active {
+    color: #00abf0;
+  }
+
+  .hobbies {
+    padding: 100px 10%;
+    text-align: center;
+  }
+
+  .hobbies h2 span {
+    color: #00abf0;
+  }
+
+  .hobbies-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 2rem;
+  }
+
+  .hobbies-box {
+    flex: 1 1 calc(33.333% - 2rem);
+    box-sizing: border-box;
+    margin-bottom: 2rem;
+    text-align: center;
+    padding-top: 50px;
+  }
+
+  .hobbies-box img {
+    width: 500px;
+    border-radius: 1rem;
+  }
+
+  .image-title {
+    margin-top: 0.5rem;
+    font-size: 1.2rem;
+    color: whitesmoke;
+  }
+
+  </style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <a href="#" class="logo">Mugiwara.</a>
+      
+    <nav class="navbar">
+        <a href="./home.html">Home</a>
+        <a href="#">About</a>
+        <a href="#">Portfolio</a>
+        <a href="./hobbies.html" class="active">Hobbies</a>
+        <a href="./contactme.html">Contact</a>
+    </nav>
+  </header>
+  <section class="hobbies" id="hobbies">
+    <h2 class="heading">My <span>Hobbies</span></h2>
+
+    <div class="hobbies-container">
+      <div class="hobbies-box">
+        <img src="images/pexels-cottonbro-6041293.jpg" alt="read a book">
+        <div class="hobbies-layer">
+          <h4>Read a book</h4>
+
+      <div class="hobbies-box">
+        <img src="images/ChessSet.jpg" alt="play chess">
+        <div class="hobbies-layer">
+          <h4>Play Chess</h4>
+        
+      <div class="hobbies-box">
+        <img src="images/chris-ried-ieic5Tq8YMk-unsplash-scaled.jpg" alt="coding">
+        <div class="hobbies-layer">
+          <h4>Coding</h4>
+
+      <div class="hobbies-box">
+        <img src="images/depositphotos_195138192-stock-photo-billiard-balls-on-the-billiard.jpg" alt="play billiard">
+        <div class="hobbies-layer">
+          <h4>Play Billiard</h4> 
+          
+      <div class="hobbies-box">
+        <img src="images/images.jpg" alt="GYM">
+        <div class="hobbies-layer">
+           <h4>GYM</h4>
+           
+      <div class="hobbies-box">
+        <img src="images/istock-959080376_d_850.jpg" alt="Play backetball">
+        <div class="hobbies-layer">
+          <h4>Play Backetball</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+
+</html>

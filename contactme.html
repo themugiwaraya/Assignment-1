@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<title>Contact me</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+				font-family: 'Poppins', sans-serif;
+			}
+		</style>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<header
+		style="
+			position: relative;
+			top: 0;
+			left: 0;
+			width: 100%;
+			padding: 20px 10%;
+			background: transparent;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			z-index: 100;
+		"
+	>
+		<a
+			href="#"
+			class="logo"
+			style="
+				font-size: 25px;
+				color: whitesmoke;
+				text-decoration: none;
+				font-weight: 600;
+			"
+			>Mugiwara.</a
+		>
+		<nav class="navbar">
+			<a
+				href="./home.html"
+				style="
+					font-size: 18px;
+					color: whitesmoke;
+					text-decoration: none;
+					font-weight: 500;
+					margin-left: 35px;
+					transition: 0.3s;
+				"
+				>Home</a
+			>
+			<a
+				href="#"
+				style="
+					font-size: 18px;
+					color: whitesmoke;
+					text-decoration: none;
+					font-weight: 500;
+					margin-left: 35px;
+					transition: 0.3s;
+				"
+				>About</a
+			>
+			<a
+				href="#"
+				style="
+					font-size: 18px;
+					color: whitesmoke;
+					text-decoration: none;
+					font-weight: 500;
+					margin-left: 35px;
+					transition: 0.3s;
+				"
+				>Portfolio</a
+			>
+			<a
+				href="./hobbies.html"
+				style="
+					font-size: 18px;
+					color: whitesmoke;
+					text-decoration: none;
+					font-weight: 500;
+					margin-left: 35px;
+					transition: 0.3s;
+				"
+				>Hobbies</a
+			>
+			<a
+				href="./contactme.html"
+				class="active"
+				style="
+					font-size: 18px;
+					color: #00abf0;
+					text-decoration: none;
+					font-weight: 500;
+					margin-left: 35px;
+					transition: 0.3s;
+				"
+				>Contact</a
+			>
+		</nav>
+	</header>
+	<body style="background: #1c1c1c; color: whitesmoke">
+		<section class="contactme">
+			<div
+				class="contact-container"
+				style="
+					height: 80vh;
+					display: flex;
+					align-items: center;
+					justify-content: space-evenly;
+				"
+			>
+				<div class="contact-left">
+					<img src="images/chat.png" alt="just img" style="width: 500px" />
+				</div>
+				<form
+					action="https://api.web3forms.com/submit"
+					method="POST"
+					class="contact-right"
+					style="
+						display: flex;
+						flex-direction: column;
+						align-items: start;
+						gap: 20px;
+					"
+				>
+					<div
+						class="contact-right-title"
+						style="
+							font-weight: 600;
+							color: #00abf0;
+							font-size: 40px;
+							margin-bottom: 5px;
+						"
+					>
+						<h2>Contact Me</h2>
+						<hr
+							style="
+								border: none;
+								width: 120px;
+								height: 5px;
+								background: #00abf0;
+								border-radius: 10px;
+								margin-bottom: 20px;
+							"
+						/>
+					</div>
+					<input
+						type="hidden"
+						name="access_key"
+						value="0fbdf9a0-437d-43da-8efa-3ba4e6d18956"
+					/>
+					<input
+						type="text"
+						name="name"
+						placeholder="Your Name"
+						required
+						style="
+							width: 400px;
+							height: 50px;
+							border: none;
+							outline: none;
+							padding-left: 25px;
+							font-weight: 500;
+							color: #00abf0;
+							border-radius: 50px;
+						"
+					/>
+					<input
+						type="email"
+						name="email"
+						placeholder="Your Email"
+						required
+						style="
+							width: 400px;
+							height: 50px;
+							border: none;
+							outline: none;
+							padding-left: 25px;
+							font-weight: 500;
+							color: #00abf0;
+							border-radius: 50px;
+						"
+					/>
+					<textarea
+						name="message"
+						placeholder="Your Message"
+						required
+						style="
+							width: 400px;
+							height: 140px;
+							border: none;
+							outline: none;
+							padding-left: 25px;
+							padding-top: 15px;
+							font-weight: 500;
+							color: #00abf0;
+							border-radius: 20px;
+						"
+					></textarea>
+					<button
+						type="submit"
+						style="
+							display: flex;
+							align-items: center;
+							padding: 15px 30px;
+							font-size: 16px;
+							color: #1c1c1c;
+							gap: 10px;
+							border: none;
+							border-radius: 50px;
+							background: linear-gradient(270deg, #00abf0, #f5f5f5);
+							cursor: pointer;
+						"
+					>
+						Submit
+						<img
+							src="images/arrow_icon.png"
+							alt="arrow icon"
+							style="height: 15px"
+						/>
+					</button>
+				</form>
+			</div>
+		</section>
+	</body>
+</html>
